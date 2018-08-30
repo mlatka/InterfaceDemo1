@@ -1,4 +1,6 @@
 public interface IntSequence {
-    boolean hasNext();
+   default  boolean hasNext(){
+       return true; // default sequence is infinite
+   };
     int next();
 }
